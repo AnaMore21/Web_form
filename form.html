@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/6ffbdd57ee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="bg">
+		<div class="wrap-form">
+			<fieldset class="enter">
+				<h1>Checkout form</h1>
+			</fieldset>
+			<fieldset class="name_person">
+			    <input class="name" type="text" name="firstname" placeholder="First name">
+			    <i class="fas fa-user"></i>
+			    <span class="input-separator"></span>
+                <input class="lastname" type="text" name="lastname" placeholder="Last name">
+                <i class="fas fa-user"></i>
+                <span class="input-separator tw"></span>
+                <br>             
+                <input class="email" type="email" name="email-address" placeholder="E-mail">
+                <i class="fas fa-envelope"></i>
+                <span class="input-separator th"></span>
+                <input class="phone" type="tel" name="phone" placeholder="Phone">
+                <i class="fas fa-phone-alt"></i>
+                <span class="input-separator fo"></span>
+			</fieldset>
+			<fieldset class="adress">
+					<div class="select">
+						<select name="country" placeholder="Country">
+					 		<option value="Country">Country</option>
+					 		<option value="Украина">Украина</option>
+					 		<option value="Беларусь">Беларусь</option> 
+				        	<option value="Россия">Россия</option>
+				    	</select> 
+				     	<i class="fas fa-sort"></i>
+	   				 </div>
+			    <input type="text" name="city" placeholder="City">
+				<input type="number" name="post code" placeholder="Post code">
+				<br>
+				<input type="text" name="address" placeholder="Address">
+				<br>
+				<input type="text" name="comment" placeholder="Additional info">
+			</fieldset>
+			<fieldset class="bank_card">
+				<div class="card">			
+  <input type="radio" id="radio" name="radio" checked="checked" />
+  <label class="label" for="radio">Visa</label>
+
+  <input type="radio" id="radio1" name="radio" />
+  <label class="label" for="radio1">MasterCard</label>
+
+  <input type="radio" id="radio2" name="radio" />
+  <label class="label" for="radio2">PayPal</label>
+				</div>
+				<input type="text" name="nameOnCard" placeholder="Name on card">
+				<br>
+				<input type="number" name="cardNambered" placeholder="Card numberd">
+				<input type="number" name="cvv2" placeholder="CVV2">
+				<p>Expiration date</p>
+				<div class="select">
+					<select name="month" placeholder="Month">
+					 	<option value="Month">Month</option>
+					 	<option value="Декабрь">Декабрь</option>
+					 	<option value="Январь">Январь</option> 
+				        <option value="Февраль">Февраль</option>
+				    </select> 
+				    <i class="fas fa-sort"></i>
+				</div>    			  
+				<input class="year" type="number" placeholder="Year">
+			</fieldset>
+			<fieldset class="batton">
+				<input class="btn" type="submit" name="submit" value="Continue">
+			</fieldset>
+		</div>
+	</div>
+</body>
+</html>
